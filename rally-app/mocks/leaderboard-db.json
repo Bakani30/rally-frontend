@@ -1,0 +1,37 @@
+{
+  "activities": [
+    { "key": "basketball", "label": "BASKETBALL", "icon": "basketball", "color": "#4F63D9" },
+    { "key": "running",    "label": "RUNNING",    "icon": "run-fast",   "color": "#FF5A3D" },
+    { "key": "badminton",  "label": "BADMINTON",  "icon": "badminton",  "color": "#2E7D62" }
+  ],
+  "leaderboard_basketball": [
+    { "userId": "alex",   "rank": 1, "displayName": "ALEX K.",   "handle": "alexk",    "letter": "A", "rating": 9840, "delta":  240, "avatarColor": "#EAC31A" },
+    { "userId": "mira",   "rank": 2, "displayName": "MIRA S.",   "handle": "miras",    "letter": "M", "rating": 8620, "delta":  180, "avatarColor": "#C7CCD3" },
+    { "userId": "bakani", "rank": 3, "displayName": "BAKANI",    "handle": "bakani30", "letter": "B", "rating": 4820, "delta":   60, "avatarColor": "#E59A55", "isYou": true },
+    { "userId": "jay",    "rank": 4, "displayName": "JAY P.",    "handle": "jayp",     "letter": "J", "rating": 4210, "delta":  -20, "avatarColor": "#B89DFF" },
+    { "userId": "lena",   "rank": 5, "displayName": "LENA C.",   "handle": "lenac",    "letter": "L", "rating": 3980, "delta":  100, "avatarColor": "#7AE8B8" },
+    { "userId": "tom",    "rank": 6, "displayName": "TOM B.",    "handle": "tomb",     "letter": "T", "rating": 3640, "delta":   30, "avatarColor": "#7FB8FF" },
+    { "userId": "sam",    "rank": 7, "displayName": "SAM W.",    "handle": "samw",     "letter": "S", "rating": 2980, "delta":  -40, "avatarColor": "#FFB6C1" },
+    { "userId": "kim",    "rank": 8, "displayName": "KIM J.",    "handle": "kimj",     "letter": "K", "rating": 2710, "delta":   15, "avatarColor": "#FFD27A" }
+  ],
+  "leaderboard_running": [
+    { "userId": "mira",   "rank": 1, "displayName": "MIRA S.",   "handle": "miras",    "letter": "M", "rating": 12480, "delta":  320, "avatarColor": "#EAC31A" },
+    { "userId": "tom",    "rank": 2, "displayName": "TOM B.",    "handle": "tomb",     "letter": "T", "rating": 11200, "delta":  140, "avatarColor": "#C7CCD3" },
+    { "userId": "alex",   "rank": 3, "displayName": "ALEX K.",   "handle": "alexk",    "letter": "A", "rating":  9870, "delta":   90, "avatarColor": "#E59A55" },
+    { "userId": "lena",   "rank": 4, "displayName": "LENA C.",   "handle": "lenac",    "letter": "L", "rating":  7820, "delta":   60, "avatarColor": "#7AE8B8" },
+    { "userId": "bakani", "rank": 5, "displayName": "BAKANI",    "handle": "bakani30", "letter": "B", "rating":  6540, "delta":  -30, "avatarColor": "#E59A55", "isYou": true },
+    { "userId": "jay",    "rank": 6, "displayName": "JAY P.",    "handle": "jayp",     "letter": "J", "rating":  5920, "delta":   20, "avatarColor": "#B89DFF" },
+    { "userId": "kim",    "rank": 7, "displayName": "KIM J.",    "handle": "kimj",     "letter": "K", "rating":  4810, "delta":   10, "avatarColor": "#FFD27A" },
+    { "userId": "sam",    "rank": 8, "displayName": "SAM W.",    "handle": "samw",     "letter": "S", "rating":  3700, "delta":  -15, "avatarColor": "#FFB6C1" }
+  ],
+  "leaderboard_badminton": [
+    { "userId": "lena",   "rank": 1, "displayName": "LENA C.",   "handle": "lenac",    "letter": "L", "rating": 7920, "delta":  210, "avatarColor": "#EAC31A" },
+    { "userId": "jay",    "rank": 2, "displayName": "JAY P.",    "handle": "jayp",     "letter": "J", "rating": 7140, "delta":   80, "avatarColor": "#C7CCD3" },
+    { "userId": "sam",    "rank": 3, "displayName": "SAM W.",    "handle": "samw",     "letter": "S", "rating": 6320, "delta":  120, "avatarColor": "#E59A55" },
+    { "userId": "bakani", "rank": 4, "displayName": "BAKANI",    "handle": "bakani30", "letter": "B", "rating": 5210, "delta":   40, "avatarColor": "#E59A55", "isYou": true },
+    { "userId": "mira",   "rank": 5, "displayName": "MIRA S.",   "handle": "miras",    "letter": "M", "rating": 4870, "delta":  -10, "avatarColor": "#7AE8B8" },
+    { "userId": "kim",    "rank": 6, "displayName": "KIM J.",    "handle": "kimj",     "letter": "K", "rating": 3940, "delta":   20, "avatarColor": "#7FB8FF" },
+    { "userId": "alex",   "rank": 7, "displayName": "ALEX K.",   "handle": "alexk",    "letter": "A", "rating": 3120, "delta":  -30, "avatarColor": "#FFB6C1" },
+    { "userId": "tom",    "rank": 8, "displayName": "TOM B.",    "handle": "tomb",     "letter": "T", "rating": 2880, "delta":    5, "avatarColor": "#FFD27A" }
+  ]
+}

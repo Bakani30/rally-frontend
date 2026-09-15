@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Rally Storybook",
+    "slug": "rally-storybook",
+    "version": "1.0.0",
+    "scheme": "rallystorybook",
+    "newArchEnabled": true,
+    "updates": {
+      "enabled": false
+    },
+    "ios": {
+      "bundleIdentifier": "com.rallyactiver.rally.storybook"
+    },
+    "android": {
+      "package": "com.rallyactiver.rally.storybook"
+    }
+  }
+}

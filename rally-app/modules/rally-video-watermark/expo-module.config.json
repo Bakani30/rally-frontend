@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["RallyVideoWatermarkModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.rallyvideowatermark.RallyVideoWatermarkModule"]
+  }
+}

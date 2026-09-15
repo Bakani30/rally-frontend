@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="900" viewBox="0 0 390 900" fill="none">
+  <g transform="rotate(-6 195 650)">
+    <g stroke="#582412" stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.78">
+      <line x1="-70" y1="-150" x2="-70" y2="946"/>
+      <line x1="-8" y1="-150" x2="-8" y2="958"/>
+      <line x1="54" y1="-150" x2="54" y2="946"/>
+      <line x1="116" y1="-150" x2="116" y2="958"/>
+      <line x1="178" y1="-150" x2="178" y2="946"/>
+      <line x1="240" y1="-150" x2="240" y2="958"/>
+      <line x1="302" y1="-150" x2="302" y2="946"/>
+      <line x1="364" y1="-150" x2="364" y2="958"/>
+      <line x1="426" y1="-150" x2="426" y2="946"/>
+    </g>
+
+    <g stroke="#ffe8cc" stroke-opacity="0.38" stroke-width="5.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+      <path d="M-80 -122H470"/>
+      <path d="M-80 395H470"/>
+      <path d="M-80 912H470"/>
+      <path d="M-80 -122V912"/>
+      <path d="M470 -122V912"/>
+      <circle cx="195" cy="395" r="66" opacity="0.42"/>
+
+      <path d="M-47 -122L-47 34A261 261 0 0 0 437 34L437 -122"/>
+      <path d="M107 -122V87H283V-122"/>
+      <path d="M129 87A66 66 0 0 1 261 87"/>
+      <path d="M261 87A66 66 0 0 1 129 87" opacity="0.28" stroke-dasharray="9 9"/>
+      <line x1="107" y1="87" x2="283" y2="87"/>
+
+      <path d="M151 -64A44 44 0 0 1 239 -64" opacity="0.78"/>
+      <line x1="151" y1="-64" x2="151" y2="-78" opacity="0.78"/>
+      <line x1="239" y1="-64" x2="239" y2="-78" opacity="0.78"/>
+      <line x1="150" y1="-78" x2="240" y2="-78" opacity="0.84"/>
+      <circle cx="195" cy="-64" r="8" opacity="0.9"/>
+
+      <line x1="107" y1="48" x2="91" y2="48" opacity="0.42"/>
+      <line x1="107" y1="4" x2="91" y2="4" opacity="0.42"/>
+      <line x1="107" y1="-40" x2="91" y2="-40" opacity="0.42"/>
+      <line x1="283" y1="48" x2="299" y2="48" opacity="0.42"/>
+      <line x1="283" y1="4" x2="299" y2="4" opacity="0.42"/>
+      <line x1="283" y1="-40" x2="299" y2="-40" opacity="0.42"/>
+
+      <path d="M-47 912L-47 756A261 261 0 0 1 437 756L437 912"/>
+      <path d="M107 912V703H283V912"/>
+      <path d="M129 703A66 66 0 0 0 261 703"/>
+      <path d="M261 703A66 66 0 0 0 129 703" opacity="0.28" stroke-dasharray="9 9"/>
+      <line x1="107" y1="703" x2="283" y2="703"/>
+
+      <path d="M151 854A44 44 0 0 0 239 854" opacity="0.78"/>
+      <line x1="151" y1="854" x2="151" y2="868" opacity="0.78"/>
+      <line x1="239" y1="854" x2="239" y2="868" opacity="0.78"/>
+      <line x1="150" y1="868" x2="240" y2="868" opacity="0.84"/>
+      <circle cx="195" cy="854" r="8" opacity="0.9"/>
+
+      <line x1="107" y1="742" x2="91" y2="742" opacity="0.42"/>
+      <line x1="107" y1="786" x2="91" y2="786" opacity="0.42"/>
+      <line x1="107" y1="830" x2="91" y2="830" opacity="0.42"/>
+      <line x1="283" y1="742" x2="299" y2="742" opacity="0.42"/>
+      <line x1="283" y1="786" x2="299" y2="786" opacity="0.42"/>
+      <line x1="283" y1="830" x2="299" y2="830" opacity="0.42"/>
+    </g>
+  </g>
+</svg>

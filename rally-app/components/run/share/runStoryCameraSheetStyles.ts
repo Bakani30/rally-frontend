@@ -1,0 +1,118 @@
+import { StyleSheet } from 'react-native'
+
+import { Radius, Spacing, type SportPalette } from '@/constants/theme'
+
+export function createRunStoryCameraSheetStyles(theme: SportPalette) {
+  return StyleSheet.create({
+    root: { flex: 1, backgroundColor: '#000' },
+    topRow: {
+      position: 'absolute',
+      left: Spacing.lg,
+      right: Spacing.lg,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    roundBtn: {
+      width: 40,
+      height: 40,
+      borderRadius: Radius.pill,
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    recStrip: {
+      position: 'absolute',
+      alignSelf: 'center',
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 6,
+      backgroundColor: 'rgba(0,0,0,0.55)',
+      borderRadius: Radius.pill,
+      paddingHorizontal: Spacing.md,
+      paddingVertical: 6,
+    },
+    recDot: {
+      width: 8,
+      height: 8,
+      borderRadius: 4,
+      backgroundColor: '#ff4d4f',
+    },
+    recTimer: {
+      color: '#fff',
+      fontSize: 12,
+      fontWeight: '900',
+      fontVariant: ['tabular-nums'],
+    },
+    errorBanner: {
+      position: 'absolute',
+      alignSelf: 'center',
+      backgroundColor: theme.redVivid,
+      borderRadius: Radius.pill,
+      paddingHorizontal: Spacing.lg,
+      paddingVertical: Spacing.sm,
+    },
+    errorText: { color: '#fff', fontSize: 13, fontWeight: '700' },
+    controls: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      bottom: 0,
+      alignItems: 'center',
+      gap: Spacing.md,
+    },
+    modePill: {
+      flexDirection: 'row',
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      borderRadius: Radius.pill,
+      padding: 4,
+      gap: 4,
+    },
+    modeSeg: {
+      paddingHorizontal: Spacing.lg,
+      paddingVertical: 8,
+      borderRadius: Radius.pill,
+    },
+    modeSegActive: { backgroundColor: '#fff' },
+    modeText: { color: 'rgba(255,255,255,0.75)', fontSize: 13, fontWeight: '900' },
+    modeTextActive: { color: '#161616' },
+    shutterOuter: {
+      width: 66,
+      height: 66,
+      borderRadius: Radius.pill,
+      borderWidth: 3,
+      borderColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    shutterInner: {
+      width: 52,
+      height: 52,
+      borderRadius: Radius.pill,
+      backgroundColor: '#fff',
+    },
+    stopInner: {
+      width: 26,
+      height: 26,
+      borderRadius: Radius.sm,
+      backgroundColor: theme.redVivid,
+    },
+    recInner: {
+      width: 52,
+      height: 52,
+      borderRadius: Radius.pill,
+      backgroundColor: theme.redVivid,
+    },
+    previewRow: { flexDirection: 'row', gap: Spacing.md, paddingHorizontal: Spacing.lg },
+    pillBtn: {
+      minWidth: 130,
+      height: 52,
+      borderRadius: Radius.pill,
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingHorizontal: Spacing.lg,
+    },
+    retakeBtn: { backgroundColor: '#161616' },
+    retakeText: { color: '#fff' },
+    pillText: { fontSize: 16, fontWeight: '900' },
+  })
+}

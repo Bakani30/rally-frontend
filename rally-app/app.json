@@ -1,0 +1,216 @@
+{
+  "expo": {
+    "name": "Rally",
+    "slug": "rally-app",
+    "version": "1.0.1",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "rallyapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rallyactiver.rally",
+      "appleTeamId": "2A6TTC8FJL",
+      "entitlements": {
+        "com.apple.developer.applesignin": [
+          "Default"
+        ],
+        "com.apple.developer.healthkit": true,
+        "com.apple.security.application-groups": [
+          "group.com.anonymous.rally-app"
+        ]
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSHealthShareUsageDescription": "Rally reads running workouts to verify match and challenge results.",
+        "NSHealthUpdateUsageDescription": "Rally can save completed running sessions to your health history.",
+        "NSCameraUsageDescription": "Rally lets you take a photo to create a run story.",
+        "NSPhotoLibraryUsageDescription": "Rally lets you choose a photo for your run story.",
+        "NSPhotoLibraryAddUsageDescription": "Rally saves your run story image to your photo library.",
+        "NSSupportsLiveActivities": true,
+        "NSSupportsLiveActivitiesFrequentUpdates": true,
+        "NSMotionUsageDescription": "Rally นับก้าววิ่งของคุณเพื่อสรุปผลการวิ่งให้แม่นยำขึ้น",
+        "LSApplicationQueriesSchemes": [
+          "instagram",
+          "instagram-stories"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#DD5308",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.rallyactiver.rallyapp",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.POST_PROMOTED_NOTIFICATIONS",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.health.READ_DISTANCE",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "android.permission.health.READ_VO2_MAX",
+        "android.permission.health.READ_OXYGEN_SATURATION",
+        "android.permission.health.READ_HEART_RATE_VARIABILITY",
+        "android.permission.health.WRITE_EXERCISE",
+        "android.permission.health.WRITE_DISTANCE",
+        "android.permission.health.WRITE_EXERCISE_ROUTE",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+      ],
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "./plugins/withEntryFileFix",
+      "./plugins/with-android-application-id",
+      "expo-router",
+      "expo-apple-authentication",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#DD5308",
+          "dark": {
+            "backgroundColor": "#DD5308"
+          }
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 26
+          },
+          "ios": {
+            "deploymentTarget": "15.6"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Rally uses GPS for run verification and optional nearby-player recommendations. Friends discovery stores only an approximate area, not your exact location.",
+          "locationAlwaysAndWhenInUsePermission": "Rally uses background location to keep recording runs when your screen is locked.",
+          "locationAlwaysPermission": "Rally uses background location to keep recording runs when your screen is locked.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Rally lets you choose a photo for your run story.",
+          "cameraPermission": "Rally lets you take a photo to create a run story."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Rally saves your run story image to your photo library.",
+          "savePhotosPermission": "Rally saves your run story image to your photo library.",
+          "isAccessMediaLocationEnabled": false,
+          "granularPermissions": []
+        }
+      ],
+      [
+        "react-native-share",
+        {
+          "ios": [
+            "instagram",
+            "instagram-stories"
+          ],
+          "android": [
+            "com.instagram.android"
+          ]
+        }
+      ],
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthShareUsageDescription": "Rally reads steps and walking/running distance to verify daily missions and health insights.",
+          "NSHealthUpdateUsageDescription": "Rally can save completed running sessions to your health history."
+        }
+      ],
+      "expo-health-connect",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Rally นับก้าววิ่งของคุณเพื่อสรุปผลการวิ่งให้แม่นยำขึ้น"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#FF4D3D",
+          "defaultChannel": "match"
+        }
+      ],
+      "./plugins/with-rally-overlay",
+      "./plugins/with-rally-live-activity",
+      "expo-sqlite",
+      "@maplibre/maplibre-react-native",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "ใช้กล้องเพื่อถ่ายหลักฐานเควสแบบสด",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "ใช้ไมโครโฟนเพื่ออัดคลิปหลักฐาน"
+        }
+      ],
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c59c9465-c8b8-4240-ad31-9e355c65d4e1",
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "rallyappLiveActivity",
+                  "bundleIdentifier": "com.rallyactiver.rally.LiveActivity",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.anonymous.rally-app"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "owner": "chatchon",
+    "updates": {
+      "url": "https://u.expo.dev/c59c9465-c8b8-4240-ad31-9e355c65d4e1"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036431356746",
+    "project_id": "rally-active-dev",
+    "storage_bucket": "rally-active-dev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036431356746:android:54baa188c624987dc1c7b3",
+        "android_client_info": {
+          "package_name": "com.rallyactiver.rallyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-DGc1rFq45R4M9iTxkWtgeO8-rbGqcoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036431356746:android:b2c169b26785745ac1c7b3",
+        "android_client_info": {
+          "package_name": "online.Rally"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-DGc1rFq45R4M9iTxkWtgeO8-rbGqcoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

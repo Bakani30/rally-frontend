@@ -1,0 +1,23 @@
+{
+  "name": "rally-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "npm@11.9.0",
+  "workspaces": [
+    "rally-app",
+    "rally-storybook",
+    "packages/contracts",
+    "packages/db-types"
+  ],
+  "scripts": {
+    "postinstall": "if [ -f rally-app/scripts/expo-cli-localhost-patch.mjs ]; then ln -sfn ../rally-app/node_modules/expo-router node_modules/expo-router 2>/dev/null || true; node rally-app/scripts/expo-cli-localhost-patch.mjs apply; fi",
+    "start": "npm run start -w rally-app",
+    "ios": "npm run ios -w rally-app",
+    "android": "npm run android:dev -w rally-app",
+    "storybook:start": "npm run start -w rally-storybook",
+    "storybook:ios": "npm run ios -w rally-storybook",
+    "lint": "npm run lint -w rally-app",
+    "typecheck": "npm run typecheck -w rally-app && npm run typecheck:storybook -w rally-app",
+    "test": "npm run test -w rally-app && npm run test:storybook -w rally-app && npm run test -w rally-storybook"
+  }
+}

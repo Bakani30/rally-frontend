@@ -1,0 +1,50 @@
+import type { Dictionary } from '../translate'
+
+export const authSignUpDictionary = {
+  usernameRequiredTitle: { th: 'Username required', en: 'Username required' },
+  usernameRequiredMessage: { th: 'กรุณากรอก username', en: 'Please enter a username.' },
+  usernameInvalidTitle: { th: 'Username ไม่ถูกต้อง', en: 'Invalid username' },
+  usernameInvalidMessage: {
+    th: 'ใช้ A–Z, a–z, 0–9, _ ความยาว 3–20 ตัวอักษรเท่านั้น',
+    en: 'Use only A–Z, a–z, 0–9, _ — 3 to 20 characters.',
+  },
+  emailRequiredTitle: { th: 'ต้องกรอกอีเมล', en: 'Email required' },
+  emailRequiredMessage: { th: 'กรุณากรอกอีเมลของคุณ', en: 'Please enter your email.' },
+  passwordTooShortTitle: { th: 'รหัสผ่านสั้นเกินไป', en: 'Password too short' },
+  passwordTooShortMessage: {
+    th: 'รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร',
+    en: 'Password must be at least 8 characters.',
+  },
+  passwordTooWeakTitle: { th: 'รหัสผ่านไม่ปลอดภัย', en: 'Password too weak' },
+  passwordTooWeakMessage: {
+    th: 'รหัสผ่านต้องไม่ซ้ำกับอีเมลของคุณ',
+    en: 'Password must not be the same as your email.',
+  },
+  welcomeTitle: { th: 'ยินดีต้อนรับสู่ Rally', en: 'Welcome to Rally' },
+  welcomeMessage: { th: 'เข้าสู่ระบบแล้วในชื่อ @{name}', en: 'Signed in as @{name}' },
+  alreadyRegisteredTitle: { th: 'อีเมลนี้ถูกใช้แล้ว', en: 'Email already registered' },
+  alreadyRegisteredMessage: {
+    th: 'อีเมลนี้สมัครไว้ก่อนหน้านี้แล้ว ไปหน้า Sign in เพื่อเข้าระบบ',
+    en: 'This email is already registered. Go to Sign in to log in.',
+  },
+  cancel: { th: 'ยกเลิก', en: 'Cancel' },
+  goToSignIn: { th: 'ไปหน้า Sign in', en: 'Go to Sign in' },
+  checkEmailTitle: { th: 'ตรวจสอบอีเมลของคุณ', en: 'Check your email' },
+  checkEmailMessage: {
+    th: 'เราส่งลิงก์ยืนยันไปที่อีเมลของคุณแล้ว',
+    en: 'We sent a confirmation link to your email.',
+  },
+  eyebrow: { th: 'สร้างโปรไฟล์', en: 'CREATE PROFILE' },
+  title: { th: 'เข้าร่วม Rally', en: 'Join Rally' },
+  kicker: { th: 'พร้อมรับการแข่งขันใน 30 วินาที', en: 'Ready to compete in 30 seconds' },
+  usernameFieldLabel: { th: 'ชื่อผู้ใช้', en: 'USERNAME' },
+  usernamePlaceholder: { th: '3–20 ตัว: A–Z, a–z, 0–9, _', en: '3–20 chars: A–Z, a–z, 0–9, _' },
+  emailFieldLabel: { th: 'อีเมล', en: 'EMAIL' },
+  emailPlaceholder: { th: 'you@rally.app', en: 'you@rally.app' },
+  passwordFieldLabel: { th: 'รหัสผ่าน', en: 'PASSWORD' },
+  passwordPlaceholder: { th: 'อย่างน้อย 8 ตัวอักษร', en: 'min 8 chars' },
+  creatingButton: { th: 'กำลังสร้าง…', en: 'CREATING…' },
+  createAccountButton: { th: 'สร้างบัญชี', en: 'CREATE ACCOUNT' },
+  alreadyHaveAccountPrompt: { th: 'มีบัญชีอยู่แล้ว?', en: 'Already have an account?' },
+  signInLink: { th: 'เข้าสู่ระบบ', en: 'Sign in' },
+} satisfies Dictionary

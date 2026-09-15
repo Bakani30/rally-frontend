@@ -1,0 +1,94 @@
+{
+  "cli": {
+    "version": ">= 16.18.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "extends": "alpha",
+      "channel": "preview",
+      "distribution": "internal",
+      "env": {
+        "EXPO_NO_METRO_WORKSPACE_ROOT": "1",
+        "EXPO_PUBLIC_ENABLE_RUNNING_GPS": "true",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://xovofmkyzyqjxvmvogsw.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhvdm9mbWt5enlxanh2bXZvZ3N3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwOTE4MDcsImV4cCI6MjA5NTY2NzgwN30.enW3Xs6Mw4xJWmYESiqtN54GftVgJqdkQD3nliyAz4o",
+        "EXPO_PUBLIC_SUPABASE_FUNCTION_REGION": "ap-southeast-1"
+      }
+    },
+    "preview-simulator": {
+      "extends": "preview",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "alpha": {
+      "extends": "production",
+      "environment": "production",
+      "channel": "alpha",
+      "distribution": "store",
+      "autoIncrement": true,
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "env": {
+        "EXPO_NO_METRO_WORKSPACE_ROOT": "1",
+        "EXPO_PUBLIC_ENABLE_RUNNING_GPS": "true",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://ltrdptqotnioajnlesqy.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_FUNCTION_REGION": "ap-southeast-1",
+        "ORG_GRADLE_PROJECT_reactNativeArchitectures": "arm64-v8a"
+      }
+    },
+    "alpha-local": {
+      "extends": "alpha",
+      "credentialsSource": "local"
+    },
+    "alpha-android": {
+      "extends": "alpha",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "ORG_GRADLE_PROJECT_reactNativeArchitectures": "arm64-v8a"
+      }
+    },
+    "production": {
+      "environment": "production",
+      "channel": "production",
+      "distribution": "store",
+      "autoIncrement": true,
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "env": {
+        "EXPO_NO_METRO_WORKSPACE_ROOT": "1",
+        "EXPO_PUBLIC_ENABLE_RUNNING_GPS": "true",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://ltrdptqotnioajnlesqy.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_FUNCTION_REGION": "ap-southeast-1"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6782374179"
+      }
+    },
+    "alpha": {
+      "android": {
+        "track": "alpha"
+      },
+      "ios": {
+        "ascAppId": "6782374179"
+      }
+    }
+  }
+}

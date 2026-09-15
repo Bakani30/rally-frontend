@@ -1,0 +1,19 @@
+{
+  "channel": "alpha",
+  "environment": "production",
+  "appVersion": "1.0.1",
+  "runtimeVersion": "1.0.1",
+  "baseGitCommit": "727f9e5fd7950e5667b69cbac3df6f3396af3cbb",
+  "builds": {
+    "ios": {
+      "id": "90c69f6d-2132-49b4-8ef8-37080552e2dc",
+      "platform": "IOS",
+      "appBuildVersion": "57"
+    },
+    "android": {
+      "id": null,
+      "platform": "ANDROID",
+      "appBuildVersion": null
+    }
+  }
+}
